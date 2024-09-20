@@ -1,0 +1,186 @@
+.dndflow {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow aside {
+    border-right: 1px solid #eee;
+    padding: 15px 10px;
+    font-size: 12px;
+    background: #9e9797;
+  }
+
+    
+  .dndflow aside .description {
+    margin-bottom: 10px;
+  }
+  
+  .dndflow .dndnode {
+    height: 20px;
+    padding: 4px;
+    border: 1px solid #1a192b;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .dndflow .dndnode.input {
+    border-color: #0041d0;
+  }
+  
+  .dndflow .dndnode.output {
+    border-color: #ff0072;
+  }
+  
+  .dndflow .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow .selectall {
+    margin-top: 10px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .dndflow {
+      flex-direction: row;
+      flex-direction: row-reverse;
+    }
+  
+    .dndflow aside {
+      width: 15%;
+      max-width: 250px;
+    }
+  }
+  .react-flow__node-output, .react-flow__node-group {
+    
+      padding: 4px;
+      border-radius: 50%; /* Change this to make it a circle */
+      width: 50px; /* Set the width and height to be the same for a circle */
+      height: 50px; /* Added height to match width */
+      font-size: 10px;
+      color: #222;
+      text-align: center;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #1a192b;
+      background-color: rgb(62, 165, 86);
+    
+}
+.react-flow__node-input{
+  padding: 4px;
+    border-radius: 3px;
+    width: 100px;
+    font-size: 10px;
+    color: #222;
+    text-align: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1a192b;
+    background-color: white;
+}
+
+.react-flow__node-cylinder {
+  padding: 4px;
+  border-radius: 25px; /* Large value to create a cylindrical/capsule shape */
+  width: 100px; /* Width of the cylinder */
+  height: 50px; /* Height of the cylinder */
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1a192b;
+  background-color: rgb(86, 165, 239); /* Example background color */
+}
+
+.react-flow__node-default{
+  padding: 4px;
+  border-radius: 0; 
+  width: 60px; 
+  height: 60px; 
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1a192b;
+  background-color: rgb(147, 69, 69);
+}
+
+
+/* New shapes styling */
+.react-flow__node-diamond {
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-bottom: 30px solid #7e57c2; /* Color */
+  position: relative;
+  top: -30px;
+}
+.react-flow__node-diamond:after {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border: 50px solid transparent;
+  border-top: 30px solid #7e57c2; /* Same color */
+}
+
+.react-flow__node-parallelogram {
+  width: 100px;
+  height: 50px;
+  background: #f57c00;
+  transform: skew(20deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.react-flow__node-trapezoid {
+  width: 100px;
+  height: 0;
+  border-bottom: 50px solid #8e44ad;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.btn{
+  margin-top: 20px;
+}
+.updatenode__controls{
+  width: 12%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: #d1b5c0;
+}
+input{
+  margin-top: 15px;
+  height: 30px;
+  box-shadow: rgba(225, 220, 220, 0.24) 0px 3px 8px;
+border: none;
+padding: 5px;
+}
+
+.btn{
+    background-color: rgb(121, 213, 0);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border: #6c9f50;
+    cursor: pointer;
+} 
+label{
+  color: rgb(239, 231, 231);
+}
